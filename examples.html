@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container text-light fw-bold">
+        <h2 class="text-dark fs-2">Ocupar la misma medida</h2>
         <div class="row text-center">
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 py-2"><div class="bg-info card-body">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 py-2"><div class="bg-info card-body">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
@@ -25,5 +26,51 @@
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 py-2"><div class="bg-info card-body">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
         </div>
     </div>
+
+    <div class="container mt-5 text-light">
+        <h2 class="text-dark fs-2 fw-bold">Ocupar distintas medidas</h2>
+        <div class="row text-center px-2">
+            <div class="col-12 col-md-8 bg-danger">Ocupo 8 columnas y la fila entera en mobile</div>
+            <div class="col-md-4 bg-info">Ocupo el resto de columans o la fila entera en mobile</div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-light">
+        <h2 class="text-dark fs-2 mb-4 fw-bold">Propiedad justify-content</h2>
+        <!-- Si en cualquiera de los siguientes ejemplos agrego una columna con las mismas características ya no tendré justificación -->
+        <h3 class="text-dark fs-3">Between</h3>
+        <div class="row text justify-content-between">
+            <!-- Ejemplo -->
+            <!-- <div class="col bg-warning">Ocupo 4 columnas</div> -->
+            <div class="col-4 bg-danger">Ocupo 4 columnas</div>
+            <div class="col-4 bg-info">Ocupo 4 columnas</div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-light">
+        <h3 class="text-dark fs-3">Around</h3>
+        <div class="row text justify-content-around">
+            <div class="col-4 bg-danger">Ocupo 4 columnas</div>
+            <div class="col-4 bg-info">Ocupo 4 columnas</div>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-light">
+        <h3 class="text-dark fs-3">Evenly</h3>
+        <div class="row text justify-content-evenly">
+            <div class="col-4 bg-danger">Ocupo 4 columnas</div>
+            <div class="col-4 bg-info">Ocupo 4 columnas</div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 text-light">
+        <h3 class="text-dark fs-3">Center</h3>
+        <div class="row text justify-content-center">
+            <div class="col-4 bg-danger">Ocupo 4 columnas</div>
+            <div class="col-4 bg-info">Ocupo 4 columnas</div>
+        </div>
+    </div>
+
 </body>
 </html>
